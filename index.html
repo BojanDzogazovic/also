@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AllThingsTalk by ALSO challenge - Bojan Dzogazovic</title>
+    <style>
+        @font-face {
+            font-family: "Nexa Black";
+            src: url("./source/resources/fonts/NexaBlack.eot");
+            src: url("./source/resources/fonts/NexaBlack.eot?#iefix") format("embedded-opentype"),
+                url("./source/resources/fonts/NexaBlack.woff2") format("woff2"),
+                url("./source/resources/fonts/NexaBlack.woff") format("woff"),
+                url("./source/resources/fonts/NexaBlack.ttf") format("truetype"),
+                url("./source/resources/fonts/NexaBlack.svg#NexaBlack") format("svg");
+            font-weight: 900;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Nexa';
+            src: url('./source/resources/fonts/NexaBold.eot');
+            src: url('./source/resources/fonts/NexaBold.eot?#iefix') format('embedded-opentype'),
+                url('./source/resources/fonts/NexaBold.woff2') format('woff2'),
+                url('./source/resources/fonts/NexaBold.woff') format('woff'),
+                url('./source/resources/fonts/NexaBold.ttf') format('truetype'),
+                url('./source/resources/fonts/NexaBold.svg#NexaBold') format('svg');
+            font-weight: bold;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Nexa';
+            src: url('./source/resources/fonts/NexaLight.eot');
+            src: url('./source/resources/fonts/NexaLight.eot?#iefix') format('embedded-opentype'),
+                url('./source/resources/fonts/NexaLight.woff2') format('woff2'),
+                url('./source/resources/fonts/NexaLight.woff') format('woff'),
+                url('./source/resources/fonts/NexaLight.ttf') format('truetype'),
+                url('./source/resources/fonts/NexaLight.svg#NexaLight') format('svg');
+            font-weight: 300;
+            font-style: normal;
+            font-display: swap;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="build/styles/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__logo-box">
+            <img class="header__logo" src="./source/resources/images/logo.svg" alt="logo">
+        </div>
+        <div class="header-main">
+            <ul class="header-navigation">
+                <li class="header-navigation__item">
+                    <a class="header-navigation__item-link" href="#">IoT Platform
+                        <div class="dropdown-arrow"></div>
+                    </a>
+                    <ul class="header-navigation__dropdown">
+                        <li class="header-navigation__dropdown-item">
+                            <a href="" class="header-navigation__dropdown-link">Dropdown item 1</a>
+                        </li>
+                        <li class="header-navigation__dropdown-item">
+                            <a href="" class="header-navigation__dropdown-link">Dropdown item 2</a>
+                        </li>
+                        <li class="header-navigation__dropdown-item">
+                            <a href="" class="header-navigation__dropdown-link">Dropdown item 3</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="header-navigation__item">
+                    <a class="header-navigation__item-link" href="#">Solution
+                        <div class="dropdown-arrow"></div>
+                    </a>
+                    <ul class="header-navigation__dropdown">
+                        <li class="header-navigation__dropdown-item">
+                            <a href="" class="header-navigation__dropdown-link">Dropdown item 1</a>
+                        </li>
+                        <li class="header-navigation__dropdown-item">
+                            <a href="" class="header-navigation__dropdown-link">Dropdown item 2</a>
+                        </li>
+                        <li class="header-navigation__dropdown-item">
+                            <a href="" class="header-navigation__dropdown-link">Dropdown item 3</a>
+                        </li>
+                        <li class="header-navigation__dropdown-item">
+                            <a href="" class="header-navigation__dropdown-link">Dropdown item 4</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="header-navigation__item">
+                    <a class="header-navigation__item-link" href="#">Who We Help
+                        <div class="dropdown-arrow"></div>
+                    </a>
+                    <ul class="header-navigation__dropdown">
+                        <li class="header-navigation__dropdown-item">
+                            <a href="" class="header-navigation__dropdown-link">Dropdown item 1</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="header-navigation__item">
+                    <a class="header-navigation__item-link" href="#">Pricing</a>
+                </li>
+                <li class="header-navigation__item">
+                    <a class="header-navigation__item-link" href="#">Learning Centre</a>
+                </li>
+                <li class="header-navigation__item">
+                    <a class="header-navigation__item-link" href="#">Blog</a>
+                </li>
+                <li class="header-navigation__item">
+                    <a class="header-navigation__item-link" href="#">Shop</a>
+                </li>
+                <li class="header-navigation__item">
+                    <a class="header-navigation__item-link" href="#">Join Us
+                        <span class="open-positions">8</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="header__button-group">
+                <a class="header__button header__button--border">Contact Us</a>
+                <a class="header__button header__button--filled">Sign up / Log in</a>
+            </div>
+        </div>
+        <div id="hamburger-menu" class="header__hamburger-menu">
+            <div class="header__hamburger-menu__line"></div>
+            <div class="header__hamburger-menu__line"></div>
+            <div class="header__hamburger-menu__line"></div>
+        </div>
+    </header>
+    <div id="mainContainer">
+        <section class="hero">
+            <div class="container">
+                <h1 class="hero__title">Thank you for purchasing <span class="hero__title-span">Workplace +</span>
+                    Solution Accelerator</h1>
+                <p class="hero__subtitle"><span>Let us get you through the steps and get it running and start extracting
+                        the value of data</span></p>
+                <div class="hero__steps">
+                    <div class="hero__step hero__step--active">
+                        Get started
+                    </div>
+                    <div class="hero__step">
+                        Build your own <br> application
+                    </div>
+                    <div class="hero__step">
+                        Usefull links
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="steps">
+            <div class="container">
+                <p class="steps__intro">
+                    Follow our guidelines to help you set up and work with solution acceleration in the shortest time
+                </p>
+                <div class="steps__buttons">
+                    <div class="steps__button">
+                        <img src="./source/resources/images/one.svg" alt="1" class="steps__button-image" data-id="01">
+                        <p class="steps__button-title">Activate</p>
+                    </div>
+                    <div class="steps__button">
+                        <img src="./source/resources/images/two.svg" alt="2" class="steps__button-image" data-id="02">
+                        <p class="steps__button-title">Unboxing</p>
+                    </div>
+                    <div class="steps__button">
+                        <img src="./source/resources/images/three.svg" alt="3" class="steps__button-image" data-id="03">
+                        <p class="steps__button-title">Step Three</p>
+                    </div>
+                    <div class="steps__button">
+                        <img src="./source/resources/images/four.svg" alt="4" class="steps__button-image" data-id="04">
+                        <p class="steps__button-title">Step Four</p>
+                    </div>
+                    <div class="steps__button">
+                        <img src="./source/resources/images/five.svg" alt="5" class="steps__button-image" data-id="05">
+                        <p class="steps__button-title">Step Five</p>
+                    </div>
+                    <div class="steps__button">
+                        <img src="./source/resources/images/six.svg" alt="6" class="steps__button-image" data-id="06">
+                        <p class="steps__button-title">Step Six</p>
+                    </div>
+                    <div class="steps__button">
+                        <img src="./source/resources/images/seven.svg" alt="7" class="steps__button-image" data-id="07">
+                        <p class="steps__button-title">Step Seven</p>
+                    </div>
+                </div>
+                <div class="steps__contents">
+                    <div class="steps__content" data-id="01">
+                        <p class="steps__content-title">Activate the ALSO account</p>
+                        <div class="row">
+                            <div class="column column--img">
+                                <a href="https://www.youtube.com/watch?v=kCT-9HOCZ9E" data-youtube-id="kCT-9HOCZ9E"
+                                    class="video-banner js-trigger-video-modal">
+                                    <img src="./source/resources/images/one.svg" alt="1" class="steps__content-order">
+                                    <img src="./source/resources/images/step_1.png" alt="Activate the ALSO account"
+                                        class="steps__content-image">
+                                </a>
+                            </div>
+                            <div class="column column--text">
+                                <ul class="steps__content-list">
+                                    <li class="steps__content-list-item"><span class="order-number">1. </span> After you
+                                        purchase the Workplace+ acceleration kit, you will receive the confirmation
+                                        email</li>
+                                    <li class="steps__content-list-item"><span class="order-number">2. </span> Click on
+                                        Complete your account link to activate the new Ground on the ALSO IoT Platform
+                                    </li>
+                                    <li class="steps__content-list-item"><span class="order-number">3. </span> You’ll
+                                        need this account for activating all devices</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="steps__content" data-id="02">
+                        <p class="steps__content-title">Unboxing and check-in</p>
+                        <div class="row">
+                            <div class="column column--img">
+                                <a href="https://www.youtube.com/watch?v=43NYQj9btwY" data-youtube-id="43NYQj9btwY"
+                                    class="video-banner js-trigger-video-modal">
+                                    <img src="./source/resources/images/two.svg" alt="2" class="steps__content-order">
+                                    <img src="./source/resources/images/step_2.png" alt="Unboxing and check-in"
+                                        class="steps__content-image">
+                                </a>
+                            </div>
+                            <div class="column column--text">
+                                <ul class="steps__content-list">
+                                    <li class="steps__content-list-item"><span class="order-number">1. </span> Open the
+                                        package you received and ensure that everything you ordered is inside</li>
+                                    <li class="steps__content-list-item"><span class="order-number">2. </span> Check if
+                                        all sensors have the activation codes at the back side (which goes on the wall)
+                                    </li>
+                                    <li class="steps__content-list-item"><span class="order-number">3. </span> Prepare
+                                        sensors for the activation procedure</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="links">
+            <div class="container">
+                <div class="links__content">
+                    <h2 class="links__title">Usefull links</h2>
+                    <p class="links__subtitle">For more information please visit one of our pages</p>
+                    <div class="links__blocks">
+                        <div class="links__block">FAQ</div>
+                        <div class="links__block">Learning Centre</div>
+                        <div class="links__block">Support</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__row">
+                    <div class="footer__column">
+                        <h4 class="footer__title">Products & Solutions</h4>
+                        <a href="#" class="footer__link">Ground: Acceleration Program for Resellers</a>
+                        <a href="#" class="footer__link">Maker: Prototyping for Developers</a>
+                        <a href="#" class="footer__link">Spaces: Your IoT Product Platform</a>
+                        <a href="#" class="footer__link">Partner+: Partner Program</a>
+                        <a href="#" class="footer__link">Rapid Development Kits</a>
+                        <a href="#" class="footer__link">LoRa IoT Solution</a>
+                        <a href="#" class="footer__link">NB-IoT Solution</a>
+                    </div>
+                    <div class="footer__column">
+                        <h4 class="footer__title">Who we help</h4>
+                        <a href="#" class="footer__link">LPWAN Network Provider</a>
+                        <a href="#" class="footer__link">Enterprise</a>
+                        <a href="#" class="footer__link">Hardware Design Manufacturer</a>
+                        <a href="#" class="footer__link">Solution and Application Consultant</a>
+                        <a href="#" class="footer__link">Product Development Firm</a>
+                    </div>
+                    <div class="footer__column">
+                        <h4 class="footer__title">Learn more</h4>
+                        <a href="#" class="footer__link">Learn Centre</a>
+                        <a href="#" class="footer__link">Pricing</a>
+                        <a href="#" class="footer__link">Quick Guides</a>
+                        <a href="#" class="footer__link">Videos</a>
+                        <a href="#" class="footer__link">Shop</a>
+                    </div>
+                    <div class="footer__column">
+                        <h4 class="footer__title">Engage</h4>
+                        <a href="#" class="footer__link">Blog</a>
+                        <a href="#" class="footer__link">Join Us</a>
+                        <a href="#" class="footer__link">Meet Us</a>
+                        <a href="#" class="footer__link">Contact Us</a>
+                    </div>
+                    <div class="footer__column">
+                        <h4 class="footer__title">Follow Us</h4>
+                        <div class="footer__social-box">
+                            <a href="#" class="footer__social-link">
+                                <img class="footer__social-icon" src="./source/resources/images/facebook.svg" alt="facebook">
+                            </a>
+                            <a href="#" class="footer__social-link">
+                                <img class="footer__social-icon" src="./source/resources/images/twitter.svg" alt="twitter">
+                            </a>
+                            <a href="#" class="footer__social-link">
+                                <img class="footer__social-icon" src="./source/resources/images/instagram.svg" alt="instagram">
+                            </a>
+                            <a href="#" class="footer__social-link">
+                                <img class="footer__social-icon" src="./source/resources/images/youtube.svg" alt="youtube">
+                            </a>
+                            <a href="#" class="footer__social-link">
+                                <img class="footer__social-icon" src="./source/resources/images/github.svg" alt="github">
+                            </a>
+                            <a href="#" class="footer__social-link">
+                                <img class="footer__social-icon" src="./source/resources/images/hackster.svg" alt="hackster">
+                            </a>
+                        </div>
+                        <h4 class="footer__title">Address</h4>
+                        <p class="footer__link--text">AllThingsTalk NV</p>
+                        <p class="footer__link--text">Schaliënhoevedreef 20E 3rd Floor,</p>
+                        <p class="footer__link--text">2800 MECHELEN, <br>BELGIUM</p>
+                    </div>
+                </div>
+                <div class="footer__impressum row">
+                    <div class="column">
+                        <div class="footer__logo-box">
+                            <img class="footer__logo" src="./source/resources/images/logo.svg" alt="logo">
+                        </div>
+                    </div>
+                    <div class="column">
+                        <a href="#" class="footer__impressum-text">Terms of use</a>
+                    </div>
+                    <div class="column">
+                        <a href="#" class="footer__impressum-text">Data Privacy Policy</a>
+                    </div>
+                    <div class="column">
+                        <p class="footer__impressum-text">© 2020 AllThingsTalk</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <section class="video-modal">
+            <div id="video-modal-content" class="video-modal__content">
+                <iframe id="youtube" width="100%" height="100%" frameborder="0" allow="autoplay"></iframe>
+                <a href="#">
+                    <img class="close-video-modal" src="./source/resources/images/close_button.svg" alt="X">
+                </a>
+            </div>
+            <div class="overlay"></div>
+        </section>
+    </div>
+    <script src="source/scripts/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,236 @@
+.header {
+  background: $mainBrandColor;
+  font-family: "Lato";
+  font-weight: bold;
+  font-style: normal;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 25px;
+  position: fixed;
+  box-sizing: border-box;
+  width: 100vw;
+  z-index: 10000;
+
+  &__logo-box {
+    display: table;
+    flex-grow: 0;
+  }
+
+  &__logo {
+    display: table-row;
+  }
+
+  &-main {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    align-items: center;
+    transition: $defaultTransitionDuration;
+
+    @media (max-width: 1200px) {
+      justify-content: space-evenly;
+    }
+
+    @media (max-width: 1050px) {
+      position: absolute;
+      top: 90px;
+      left: -100vw;
+      flex-direction: column;
+      width: 50vw;
+      z-index: 9999;
+      background-color: $mainTextColor;
+      height: 100vh;
+      justify-content: flex-start;
+    }
+  }
+
+  &-navigation {
+    display: block;
+    margin-top: 50px;
+    padding: 0;
+
+    @media (min-width: 1050px) {
+      display: flex;
+      margin: 0;
+    }
+
+    @media (min-width: 1200px) {
+      padding: 0 0 0 60px;
+    }
+
+    &__item {
+      display: block;
+      margin: 15px;
+      position: relative;
+
+      @media (min-width: 1050px) {
+        display: inline-block;
+        margin: 0 5px;
+      }
+
+      @media (min-width: 1200px) {
+        margin: 0 10px;
+      }
+
+      &:hover {
+        .header-navigation__item-link {
+          color: $secondaryBrandColor;
+        }
+
+        .dropdown-arrow {
+          border-color: $secondaryBrandColor;
+        }
+
+        .header-navigation__dropdown {
+          display: block;
+          position: absolute;
+          top: 20px;
+          left: 0;
+          background-color: $mainTextColor;
+          color: $mainBrandColor;
+          border: 1px solid $mainTextColor;
+          border-radius: 3px;
+
+          @media (max-width: 1050px) {
+            top: 0;
+            left: auto;
+            right: -40vw;
+            z-index: 10000;
+            border: 0.1px solid $secondaryBrandColor;
+          }
+        }
+      }
+
+      &-link {
+        text-decoration: none;
+        color: $mainBrandColor;
+        font-size: 14px;
+        line-height: 17px;
+        transition: $defaultTransitionDuration;
+
+        @media (min-width: 1050px) {
+          color: $mainTextColor;
+        }
+
+        .dropdown-arrow {
+          position: relative;
+          top: -1px;
+          right: -1px;
+          height: 6px;
+          width: 6px;
+          transform: rotate(45deg);
+          display: inline-block;
+          transition: $defaultTransitionDuration;
+          border: 1.5px solid $mainBrandColor;
+          border-width: 0 1.5px 1.5px 0;
+
+          @media (min-width: 1050px) {
+            border: 1.5px solid $mainTextColor;
+            border-width: 0 1.5px 1.5px 0;
+          }
+        }
+
+        .open-positions {
+          background-color: $secondaryBrandColor;
+          color: $mainBrandColor;
+          padding: 1px 5px;
+          border: 1px solid $secondaryBrandColor;
+          border-radius: 50%;
+          font-size: 11px;
+          line-height: 13px;
+          position: relative;
+          top: -10px;
+          right: -1px;
+        }
+      }
+    }
+
+    &__dropdown {
+      display: none;
+      list-style: none;
+      padding: 5px;
+      width: max-content;
+      transition: $defaultTransitionDuration;
+
+      &-item {
+        padding: 5px;
+      }
+
+      &-link {
+        text-decoration: none;
+        color: $mainBrandColor;
+        font-size: 14px;
+        line-height: 17px;
+
+        &:hover {
+          color: $secondaryBrandColor;
+        }
+      }
+    }
+  }
+
+  &__button-group {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: 1050px) {
+      flex-direction: row;
+    }
+  }
+
+  &__button {
+    font-size: 13px;
+    line-height: 16px;
+    padding: 7px 13px;
+    margin: 5px;
+    text-align: center;
+    cursor: pointer;
+
+    &--border {
+      background: transparent;
+      border: 1px solid $mainTextColor;
+      color: $mainTextColor;
+      transition: $defaultTransitionDuration;
+
+      &:hover {
+        background: $mainTextColor;
+        color: $mainBrandColor;
+      }
+    }
+
+    &--filled {
+      border: 1px solid $mainTextColor;
+      background: $mainTextColor;
+      color: $mainBrandColor;
+    }
+
+    @media (max-width: 1050px) {
+      border: 1px solid $mainBrandColor !important;
+      color: $mainTextColor !important;
+      background: $mainBrandColor !important;
+    }
+  }
+
+  &__hamburger-menu {
+    display: block;
+    border: 1px solid $mainTextColor;
+    background: $mainBrandColor;
+    padding: 10px;
+    border-radius: 3px;
+
+    @media (min-width: 1050px) {
+      display: none;
+    }
+
+    &__line {
+      height: 0.5px;
+      background: $mainTextColor;
+      width: 25px;
+      border: 1px solid $mainTextColor;
+      margin: 5px 1px;
+      transition: $defaultTransitionDuration;
+      position: relative;
+    }
+  }
+}
